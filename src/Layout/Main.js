@@ -6,7 +6,9 @@ const Main = () => {
     return (
         <div>
             <Navbar/>
-            <Outlet/>
+            <div style={{ minHeight: "100vh" }} className='bg-[#E7FEFF] mx-8' >
+                <Outlet/>
+            </div>
         </div>
     );
 };

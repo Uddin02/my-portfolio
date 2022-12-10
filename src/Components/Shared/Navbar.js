@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    return (
-        <div className="bg-[#F9E6FF]">
+  return (
+    <div className="bg-[#E7FEFF]">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
@@ -15,7 +14,13 @@ const Navbar = () => {
             title="CourseHub"
             className="inline-flex items-center"
           >
-            <h2 className='inline-block text-center text-2xl text-primary font-semibold'> <span className='rounded-full border-2 border-spacing-x-2 px-1 border-primary'>CO</span>DEWITH ARIF</h2>
+            <h2 className="inline-block text-center text-2xl text-primary font-medium">
+              {" "}
+              <span className="rounded-full border-2 border-spacing-x-2 px-1 border-primary">
+                CO
+              </span>
+              DEWITH ARIF
+            </h2>
           </Link>
           <ul className="md:flex items-center hidden space-x-8 lg:flex">
             <li>
@@ -47,7 +52,7 @@ const Navbar = () => {
                 Services
               </NavLink>
             </li>
-            
+
             <li>
               <NavLink
                 to="/projects"
@@ -163,7 +168,7 @@ const Navbar = () => {
                         title="courseHub"
                         className="inline-flex items-center"
                       >
-                        <img className="w-16" src='#' alt="" />
+                        <img className="w-16" src="#" alt="" />
                       </Link>
                     </div>
                     <div>
@@ -205,7 +210,7 @@ const Navbar = () => {
                           Courses
                         </Link>
                       </li>
-                      
+
                       <li>
                         <Link
                           to="/courses"
@@ -258,7 +263,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;
