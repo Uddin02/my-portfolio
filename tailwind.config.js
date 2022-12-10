@@ -7,7 +7,7 @@ module.exports = {
     themes: [
       {
         myportfoliotheme:{
-          primary: '#60a5fa',
+          primary: '#78C4EB',
           secondary: '#19D3AE',
           accent: "#64748b",
           neutral: "#3D4451",
