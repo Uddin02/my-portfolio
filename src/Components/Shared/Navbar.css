@@ -1,0 +1,13 @@
+.navigation {
+  background-color: #e7feff;
+  color: #c5d0de;
+  width: 100%;
+}
+
+.active {
+  background-color: #212428cb;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0px;
+  transition: top 0.5s ease-in;
+}

@@ -1,15 +1,29 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBg = () => {
+    if (window.scrollY >= 200) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBg);
 
   return (
-    <div className="bg-[#E7FEFF]">
+    <div className={`navigation ${navbar ? "active" : ""} z-50`}>
+      <div className="">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
-            to="/home"
+            to="/"
             aria-label="CourseHub"
             title="CourseHub"
             className="inline-flex items-center"
@@ -24,82 +38,65 @@ const Navbar = () => {
           </Link>
           <ul className="md:flex items-center hidden space-x-8 lg:flex">
             <li>
-              <NavLink
-                to="/home"
+              <Link
+                smooth
+                to="#home"
                 aria-label="Home"
                 title="Home"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-primary transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
+                className=" font-medium tracking-wide text-primary "
+                
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
-                to="/services"
+              <Link
+                smooth
+                to="#aboutme"
+                aria-label="aboutme"
+                title="aboutme"
+                className=" font-medium tracking-wide text-primary "
+              >
+                About Me
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="#services"
                 aria-label="services"
                 title="services"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
+                className=" font-medium tracking-wide text-primary "
               >
                 Services
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
-                to="/projects"
+              <Link
+                to="#projects"
                 aria-label="projects"
                 title="projects"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
+                className=" font-medium tracking-wide text-primary "
               >
                 Projects
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
+              <Link
                 to="/resume"
                 aria-label="resume"
                 title="resume"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
+                className=" font-medium tracking-wide text-primary "
               >
                 Resume
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
-                to="/aboutme"
-                aria-label="aboutme"
-                title="aboutme"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
-              >
-                About Me
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
+              <Link
                 to="/blog"
                 aria-label="blog"
                 title="blog"
@@ -110,7 +107,7 @@ const Navbar = () => {
                 }
               >
                 Blog
-              </NavLink>
+              </Link>
             </li>
 
             <li className="grid items-center">
@@ -263,6 +260,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+
+    </div>   
   );
 };
 
