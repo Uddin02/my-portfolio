@@ -88,22 +88,22 @@
 
 .timeline-card::before {
   content: " ";
-  background: #212428;
+  background: #f1f5f2;
   z-index: 2;
   width: 8px;
   height: 8px;
   border-radius: 5px;
-  box-shadow: 0px 0px 0px 4px black;
+  box-shadow: 0px 0px 0px 4px #497384;
   transform: translateX(100%);
 }
 .timeline-card:hover::before {
-  background: #0097e6;
+  background: black;
 }
 .timeline-card::after {
   content: " ";
   position: absolute;
   left: 2%;
-  background: black;
+  background: #78c4eb;
   width: 88px;
   height: 3px;
 }
@@ -120,8 +120,8 @@
   align-items: left;
   z-index: 1;
   border-radius: 12px;
-  background: linear-gradient(-45deg, #212428, #212428);
-  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
+  background: linear-gradient(-45deg, #57737e, #78c4eb);
+  box-shadow: 5px 5px 10px #32373d, -3px -3px 10px #a1c9f1;
   transition: bottom 0.3s ease-in-out;
 }
 .education-card::after {
