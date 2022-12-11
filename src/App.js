@@ -1,14 +1,21 @@
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AboutMe from './Components/AboutMe/AboutMe';
-
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
 import Navbar from './Components/Shared/Navbar';
 import Landing from './pages/LandingPage/Landing';
-// import router from './Routes/Routes';
+
 
 function App() {
+
+  useEffect(()=>{
+    Aos.init();
+  },[])
+
   return (
     <div className='mx-auto'>
       <Navbar/>
