@@ -23,7 +23,7 @@ const Home = () => {
             loop
             />
           </p>
-          <button className="btn btn-primary text-base-100">More About Me</button>
+          <a href="https://drive.google.com/file/d/1FSBwGCnG69RIR1d_w9-Sch90hpBe_Ylg/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-md btn-primary text-base-100">MY RESUME</a>
         </div>
       </div>
     </div>

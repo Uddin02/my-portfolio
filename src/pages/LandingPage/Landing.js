@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import Home from "../../Components/Home/Home";
+import Projects from "../../Components/Projects/Projects";
 import Services from "../../Components/Services/Services";
 
 
@@ -10,7 +11,7 @@ const Landing = () => {
       <Home/>
       <AboutMe/>
       <Services/>
-      {/* <Projects/> */}
+      <Projects />
     </div>
   );
 };

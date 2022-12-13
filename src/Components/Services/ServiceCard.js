@@ -8,8 +8,8 @@ const ServiceCard = ({ service }) => {
       <div className="service-card text-accent hover:text-white p-8 lg:p-12 ">
         <div className="text-left">
           <p className="text-5xl text-secondary">{icon}</p>
-          <h2 className="font-semibold text-xl lg:text-2xl my-4 text-base-200">{title}</h2>
-          <p className="text-sm lg:text-base-200">{description}</p>
+          <h2 className="font-semibold text-xl lg:text-3xl my-4 text-base-200">{title}</h2>
+          <p className="text-md lg:text-base-200">{description}</p>
         </div>
       </div>
     </div>

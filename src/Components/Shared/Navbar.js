@@ -26,7 +26,7 @@ const Navbar = () => {
             to="/"
             aria-label="CourseHub"
             title="CourseHub"
-            className="inline-flex items-center"
+            // className="inline-flex items-center"
           >
             <h2 className="inline-block text-center text-2xl text-primary font-medium">
               {" "}
@@ -86,25 +86,9 @@ const Navbar = () => {
 
             <li>
               <Link
-                to="/resume"
-                aria-label="resume"
-                title="resume"
-                className=" font-medium tracking-wide text-primary "
-              >
-                Resume
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 to="/blog"
                 aria-label="blog"
                 title="blog"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                }
               >
                 Blog
               </Link>
