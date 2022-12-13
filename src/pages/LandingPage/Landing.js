@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import Home from "../../Components/Home/Home";
+import Services from "../../Components/Services/Services";
 
 
 const Landing = () => {
@@ -8,6 +9,7 @@ const Landing = () => {
     <div id="home" className="min-w-screen px-16 bg-[#E7FEFF]">
       <Home/>
       <AboutMe/>
+      <Services/>
       {/* <Projects/> */}
     </div>
   );
