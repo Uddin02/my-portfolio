@@ -85,11 +85,12 @@ const Navbar = () => {
 
             <li>
               <Link
-                to="/blog"
-                aria-label="blog"
-                title="blog"
+                to="/blogs"
+                aria-label="blogs"
+                title="blogs"
+                className=" font-medium tracking-wide text-primary "
               >
-                Blog
+                Blogs
               </Link>
             </li>
 

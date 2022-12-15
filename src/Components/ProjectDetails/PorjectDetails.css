@@ -38,7 +38,7 @@
 
 .image-detail {
   margin: auto;
-  cursor: n-resize;
+  cursor: crosshair;
 }
 .image-detail img {
   width: 100%;
