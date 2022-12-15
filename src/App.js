@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Home from './Components/Home/Home';
+import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
 import Projects from './Components/Projects/Projects';
 import Services from './Components/Services/Services';
 import Navbar from './Components/Shared/Navbar';
@@ -26,8 +27,8 @@ function App() {
         <Route path="#home" element={<Home />} />
         <Route path="#aboutme" element={<AboutMe />} />
         <Route path='#services' element={<Services/>} />
-        <Route path='/landing#projects' element={<Projects/>}/>
-        
+        <Route path='#projects' element={<Projects/>}/>
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </div>
   );

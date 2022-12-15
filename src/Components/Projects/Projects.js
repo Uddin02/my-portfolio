@@ -13,7 +13,7 @@ const Projects = () => {
         {
           id: 1,
           title: "Resell Hub",
-          name: "Used Product Web App",
+          name: "Used Products Web App",
           image: resell_hub,
           links: {
             live: "https://resell-hub.web.app",

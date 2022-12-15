@@ -24,8 +24,8 @@ const Navbar = () => {
         <div className="relative flex items-center justify-between">
           <Link
             to="/"
-            aria-label="CourseHub"
-            title="CourseHub"
+            aria-label="CodeWithArif"
+            title="CodeWithArif"
             // className="inline-flex items-center"
           >
             <h2 className="inline-block text-center text-2xl text-primary font-medium">
@@ -39,8 +39,7 @@ const Navbar = () => {
           <ul className="md:flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
-                smooth
-                to="#home"
+                to="/"
                 aria-label="Home"
                 title="Home"
                 className=" font-medium tracking-wide text-primary "
