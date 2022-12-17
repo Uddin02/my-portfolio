@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaDotCircle } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import alpha_tour from "../../assets/alpha-tour.png";
 import course_hub from "../../assets/course-hub.png";
@@ -151,7 +152,7 @@ const ProjectDetails = () => {
               rel="noreferrer"
               className="project-button text-[10px] lg:text-[12px]"
             >
-              <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
+              <FaDotCircle className="text-sm text-base-100 mr-2" />
               View Live
             </a>
             <a
@@ -160,7 +161,7 @@ const ProjectDetails = () => {
               rel="noreferrer"
               className="project-button text-[10px] lg:text-[12px]"
             >
-              <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
+              <FaDotCircle className="text-sm text-base-100 mr-2" />
               Client Code
             </a>
             <a
@@ -170,7 +171,7 @@ const ProjectDetails = () => {
               className="project-button text-[10px] lg:text-[12px]"
             >
               {" "}
-              <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
+              <FaDotCircle className="text-sm text-base-100 mr-2" />
               Server Code
             </a>
           </div>

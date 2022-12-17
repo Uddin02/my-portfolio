@@ -48,7 +48,7 @@ const Projects = () => {
     return (
         <div id='projects' className="text-white max-w-full mt-14">
           <div data-aos="zoom-in" data-aos-duration="500">
-            <p className="text-accent font-bold text-3xl lg:text-5xl mb-10">My Full Stack <span className='border-b-4 border-indigo-500'>Projects</span></p>
+            <p className="text-secondary font-bold text-3xl mb-10">My Full Stack <span className='border-b-4 border-secondary'>Projects</span></p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {projects.map((project) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "../../Components/AboutMe/AboutMe";
+import Contact from "../../Components/Contact/Contact";
 import Home from "../../Components/Home/Home";
 import Projects from "../../Components/Projects/Projects";
 import Services from "../../Components/Services/Services";
@@ -12,6 +13,7 @@ const Landing = () => {
       <AboutMe/>
       <Services/>
       <Projects />
+      <Contact />
     </div>
   );
 };

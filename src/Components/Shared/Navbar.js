@@ -94,6 +94,17 @@ const Navbar = () => {
               </Link>
             </li>
 
+            <li>
+              <Link
+                to="#contact"
+                aria-label="contact"
+                title="contact"
+                className=" font-medium tracking-wide text-primary "
+              >
+                Contact
+              </Link>
+            </li>
+
             <li className="grid items-center">
               <label className="swap swap-rotate">
                 <input type="checkbox" />
