@@ -10,6 +10,7 @@ import Home from './Components/Home/Home';
 import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
 import Projects from './Components/Projects/Projects';
 import Services from './Components/Services/Services';
+import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
 import Landing from './pages/LandingPage/Landing';
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

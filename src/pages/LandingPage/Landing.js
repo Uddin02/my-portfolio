@@ -8,13 +8,15 @@ import Services from "../../Components/Services/Services";
 
 const Landing = () => {
   return (
-    <div id="home" className="min-w-screen px-16 bg-[#E7FEFF]">
-      <Home/>
-      <AboutMe/>
-      <Services/>
-      <Projects />
-      <Contact />
-    </div>
+
+      <div id="home" className="min-w-screen px-16 bg-[#E7FEFF]">
+        <Home/>
+        <AboutMe/>
+        <Services/>
+        <Projects />
+        <Contact />
+      </div>
+
   );
 };
 

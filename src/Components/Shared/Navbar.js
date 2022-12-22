@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
-            to="/"
+            to="#home"
             aria-label="CodeWithArif"
             title="CodeWithArif"
             // className="inline-flex items-center"
@@ -39,7 +39,7 @@ const Navbar = () => {
           <ul className="md:flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
-                to="/"
+                to="#home"
                 aria-label="Home"
                 title="Home"
                 className=" font-medium tracking-wide text-primary "
